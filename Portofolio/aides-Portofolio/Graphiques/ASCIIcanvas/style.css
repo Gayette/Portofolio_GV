@@ -1,0 +1,159 @@
+*
+{
+  font-family: 'Monaco', monospace;
+}
+
+body
+{
+  margin: 0;
+  padding: 20px;
+}
+
+p:first-child
+{
+  margin-top: 0;
+}
+
+a:hover
+{
+  text-decoration: none;
+}
+
+input[type="text"],
+input[type="number"]
+{
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+  text-align: center;
+  background: transparent;
+}
+
+#characterInput
+{
+  width: 1em;
+}
+
+#numColumns,
+#numLines
+{
+  width: 3em;
+  background: transparent;
+}
+
+.input:before
+{
+  content: '[';
+}
+
+.input:after
+{
+  content: ']';
+}
+
+.color-set-1
+{
+  background-color: #FFF;
+  color: #000;
+  border-color: #000;
+}
+
+.color-set-1 a,
+.color-set-1 input
+{
+  color: #000;
+}
+
+.color-set-2
+{
+  background-color: #000;
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.color-set-2 a,
+.color-set-2 input
+{
+  color: #FFF;
+
+}
+
+.color-set-3
+{
+  background-color: #CCC;
+  color: #333;
+  border-color: #333;
+}
+
+.color-set-3 a,
+.color-set-3 input
+{
+  color: #333;
+}
+
+.color-set-4
+{
+  background-color: #333;
+  color: #CCC;
+  border-color: #CCC;
+}
+
+.color-set-4 a,
+.color-set-4 input
+{
+  color: #CCC;
+}
+
+.color-set-5
+{
+  background-color: #333;
+  color: #3F3;
+  border-color: #3F3;
+}
+
+.color-set-5 a,
+.color-set-5 input
+{
+  color: #3F3;
+}
+
+.color-set-6
+{
+  background-color: #333;
+  color: #99F;
+  border-color: #99F;
+}
+
+.color-set-6 a,
+.color-set-6 input
+{
+  color: #99F;
+  border-color: #99F;
+}
+
+.disable-selection
+{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+pre#canvas, pre#measureChar
+{
+  font-size: 1em;
+  display: inline;
+  cursor: default;
+  margin: 0;
+  -moz-user-select: none;
+}
+
+.canvas-area
+{
+  border-width: 1px;
+  border-style: dotted;
+  display: inline-block;
+  padding: 10px;
+}

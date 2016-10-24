@@ -1,0 +1,50 @@
+svg{
+  background-color: rgb(32,32,32);
+}
+.hex-line{
+    stroke-dasharray: 58;
+    stroke-dashoffset: -58;
+    animation: draw-R 2s infinite;
+}
+.hexagon{
+    stroke-dasharray: 213;
+    stroke-dashoffset: -213;
+    animation: draw-hexagon 2s infinite;
+}
+.hex-line{
+    stroke-dasharray: 58;
+    stroke-dashoffset: -58;
+    animation: draw-R 2s infinite;
+}
+.hex-line{
+    stroke-dasharray: 58;
+    stroke-dashoffset: -58;
+    animation: draw-R 2s infinite;
+}
+.hex-line{
+    stroke-dasharray: 58;
+    stroke-dashoffset: -58;
+    animation: draw-R 2s infinite;
+}
+.hex-line{
+    stroke-dasharray: 58;
+    stroke-dashoffset: -58;
+    animation: draw-R 2s infinite;
+}
+
+@keyframes draw-R {
+  from{
+    stroke-dashoffset: -58;
+  }
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-hexagon {
+  from{
+    stroke-dashoffset: -213;
+  }
+  to{
+    stroke-dashoffset: 0;
+  }
+}

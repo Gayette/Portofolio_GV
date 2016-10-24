@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <head>
+	
+	 <link rel="stylesheet" media="screen" type="text/css" title="style" href="style.css"/>
+
+  </head>
+
+	<body>
+
+		<div class="main-dev">
+  <div class="wrapper"> 
+    <h1>AUTOMATICO</h1><span>La informacion de este indicador de progreso se genera de manera automatica usando JQuery y objetos del tipo "data"</span>
+    <!-- este progress se hace forma automatica-->
+    <div data-value="99" data-title="html" class="progress-circle progress-auto progress-red"> </div>
+  </div>
+  <div class="wrapper">
+    <h1>MANUAL</h1><span>Estos dos elementos son generados de manera manual sin emplear JQuery</span>
+    <!-- este progress se hace forma manual-->
+    <div class="progress-circle progress-blue">
+      <div class="progress-circle-value progress-value-90"></div>
+      <div class="progress-circle-label-value">90%</div>
+      <div class="progress-circle-label-title">css</div>
+    </div>
+  </div>
+</div>
+
+
+	<script src="script.js" type="text/javascript"></script>
+		
+	</body>
+</html>

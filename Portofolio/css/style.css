@@ -1,0 +1,240 @@
+
+/*============================*/
+
+
+/*=========== FONTS ==========*/
+
+
+/*============================*/
+
+@font-face {
+  font-family: 'game';
+  src: url(../fonts/game/game_font_7.ttf);
+}
+
+@font-face {
+  font-family: 'digital';
+  src: url(../fonts/digital/DigitalFirebomb.ttf);
+}
+
+@font-face {
+  font-family: 'press-start-2p';
+  src: url(../fonts/press-start-2p/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'square_sans_serif_7';
+  src: url(../fonts/square_sans_serif/square_sans_serif_7.ttf);
+}
+/* /////////////////////////////////////WIPEOUT FONTS */
+@font-face { /* X */
+  font-family: 'EM-Decima.Mono.Pro';
+  src: url(../fonts/EM-Decima.Mono.Pro/TTF/DecimaMonoPro.ttf);
+}
+
+@font-face {
+  font-family: 'induction';
+  src: url(../fonts/induction/induction.ttf);
+}
+
+@font-face { 
+  font-family: 'designer_block';
+  src: url(../fonts/designer_block/DESIB___.ttf);
+}
+
+@font-face { 
+  font-family: 'Wipeout_HD_Fury';
+  src: url(../fonts/Fury/Wipeout_HD_Fury.ttf);
+}
+
+@font-face { 
+  font-family: 'wipeout';
+  src: url(../fonts/wipeout/Wipeout.ttf);
+}
+
+@font-face {
+  font-family: 'walker_bot_ldr.ttf';
+  src: url(../fonts/walker_bot/walker_bot_ldr.ttf);
+}
+
+/*============================*/
+
+
+/*========== GENERAL =========*/
+
+
+/*============================*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+  font-family: 'EM-Decima.Mono.Pro';
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+/*============================*/
+
+
+/*========== CANVAS ==========*/
+
+
+/*============================*/
+
+#gameCanvas {    /* principal canvas */
+	width: 758px; /*60%*/
+	height: 552px; /*90%*/
+  float: left;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FEFEF2;
+  text-align: center;
+  color: white;
+}
+
+#blockScanvas {  /* navBlock canvas */
+  width: 98px; /*40%*/
+  height: 119px; /*20%*/
+}
+
+#blockCanvas {	/* id block canvas */  
+	width: 98px; /*40%*/ 
+	height: 92px; /*15%*/
+	margin-top: 10px;
+}
+
+/*============================*/
+
+
+/*============ NAV ===========*/
+
+
+/*============================*/
+
+.navBlock {
+  position: relative;
+  width: 256px; /*20%*/
+  height: 624px; /*100%*/
+  padding-top: 20px;
+  display: block;
+  float: left;
+  background-color: #FEFEF2;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #112F37;
+  text-align: center;
+}
+
+.navBlock li  {
+  width: 160px;
+  display: block;
+  list-style: none; 
+  color: #112F37;
+}
+
+.navBlock a {
+  display: block;
+  text-decoration:none;
+  color: #112F37;
+}  
+
+.navBlock li:hover {
+    background-color: #C44242; 
+    color: #112F37;
+}
+
+hr {
+  width: 60px;
+  border-color: #C44242;
+}
+
+/*============================*/
+
+
+/*========= ABOUT ME =========*/
+
+
+/*============================*/
+
+.id {                   /* width height en px ! RESPONSIVE !*/
+  width: 256px; /*20%*/
+  height: 624px; /*100%*/
+  padding-left-right: 5px;
+  float: right;
+  background-color: #112F37;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FEFEF2;
+  text-align: center;
+  color: white;
+}	 
+
+.id h1 { 
+  font-size: 25px; 
+  font-weight: bold;
+  color: #C44242;
+}
+
+.id h4 {
+  font-size: 15px;
+  color: #F5F5F5; 
+}
+
+.presentation {
+  width: 180px;
+  height: 400px;
+  background-color: #112F37;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #C44242;
+	margin: auto;
+  margin-top: 15px;
+  padding: 10px;  
+  font-size: 12px;
+  color: #FEFEF2;
+}
+
+hr {
+  width: 60px;
+}
+
+/*============================*/
+
+
+/*=========== FOOTER ==========*/
+
+
+/*============================*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 768px; /*60%*/
+  height: 63px; /*10%*/
+  background-color: #112F37;
+  border-style: solid;
+/*  border-width: 5px; */
+  border-color: #FEFEF2; 
+  text-align: center;
+}
+
+/* line animation 
+.line {
+  position: fixed;
+  overflow: hidden;
+  width: 8.09017em;
+  height: 5.87785em;
+  background: linear-gradient(36deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%) no-repeat -8.09017em -5.87785em;
+  background-size: 100% 100%;
+  animation: drawDiag 2s linear forwards;
+}
+
+@keyframes drawDiag {
+  to {
+    background-position: 0 0;
+  }
+}    */

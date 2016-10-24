@@ -1,0 +1,48 @@
+div {
+  margin: 1em auto;
+}
+
+.box {
+  overflow: hidden;
+  outline: dotted 1px;
+  width: 8.09017em;
+  height: 5.87785em;
+  background: linear-gradient(36deg, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%) no-repeat -8.09017em -5.87785em;
+  background-size: 100% 100%;
+  animation: drawDiag 2s linear forwards;
+}
+
+@keyframes drawDiag {
+  to {
+    background-position: 0 0;
+  }
+}
+.circle {
+  overflow: hidden;
+  position: relative;
+  width: 10em;
+  height: 10em;
+}
+.circle:before {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px black;
+  content: '';
+}
+.circle .cover {
+  position: absolute;
+  margin: 0 -50%;
+  width: 200%;
+  height: inherit;
+  transform-origin: 50% 0;
+  background: white;
+  animation: revealCircle 5s linear forwards;
+}
+
+@keyframes revealCircle {
+  to {
+    transform: rotate(180deg);
+  }
+}

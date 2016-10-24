@@ -1,0 +1,164 @@
+body {
+  background: #c0392b;
+}
+
+.content {
+  width: 400px;
+  height: 200px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  position: relative;
+}
+.content .line {
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 10px;
+  -webkit-animation: dude .75s 1 forwards;
+  /* Safari 4+ */
+  -moz-animation: dude .75s 1 forwards;
+  /* Fx 5+ */
+  -o-animation: dude .75s 1 forwards;
+  /* Opera 12+ */
+  animation: dude .75s 1 forwards;
+  /* IE 10+, Fx 29+ */
+}
+.content .line2 {
+  position: absolute;
+  width: 2px;
+  background: white;
+  top: 10px;
+  right: 0;
+  -webkit-animation: dude2 .75s 1 .75s forwards;
+  /* Safari 4+ */
+  -moz-animation: dude2 .75s 1 .75s forwards;
+  /* Fx 5+ */
+  -o-animation: dude2 .75s 1 .75s forwards;
+  /* Opera 12+ */
+  animation: dude2 .75s 1 .75s forwards;
+  /* IE 10+, Fx 29+ */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -9px;
+  bottom: -15px;
+  background: #fff;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: dude3 .5s 1 1.5s forwards;
+  /* Safari 4+ */
+  -moz-animation: dude3 .5s 1 1.5s forwards;
+  /* Fx 5+ */
+  -o-animation: dude3 .5s 1 1.5s forwards;
+  /* Opera 12+ */
+  animation: dude3 .5s 1 1.5s forwards;
+  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes dude {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes dude {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-o-keyframes dude {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes dude {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes dude2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@-moz-keyframes dude2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@-o-keyframes dude2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes dude2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@-webkit-keyframes dude3 {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes dude3 {
+  0% {
+    -moz-transform: scale(0);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@-o-keyframes dude3 {
+  0% {
+    -o-transform: scale(0);
+  }
+  100% {
+    -o-transform: scale(1);
+  }
+}
+@keyframes dude3 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}

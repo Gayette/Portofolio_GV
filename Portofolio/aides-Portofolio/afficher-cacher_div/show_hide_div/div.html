@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+  <head>
+	
+	 <link rel="stylesheet" media="screen" type="text/css" title="style" href="style.css"/>
+
+  </head>
+
+	<body>
+
+<ul>
+ <li><a href="javascript:visibilite('div_texte1');">afficher texte 1</a></li>
+ <li><a href="javascript:visibilite('div_texte2');">afficher texte 2</a></li>
+ <li><a href="javascript:visibilite('div_texte3');">afficher texte 3</a></li>
+</ul>
+             
+<div id="div_texte1" style="display:block;">         
+ <p>TEXTE 1</p>
+</div>       
+         
+<div id="div_texte2" style="display:none;">
+ <p>TEXTE 2</p>
+</div>       
+         
+<div id="div_texte3" style="display:none;">
+ <p>TEXTE 3</p>
+</div>
+<script>
+    var divPrecedent=document.getElementById('div_texte1');
+    function visibilite(divId)
+    {
+        divPrecedent.style.display='none';
+        divPrecedent=document.getElementById(divId);
+        divPrecedent.style.display='';
+    }
+</script>
+<!-- //////////////////////////////////////////////////////////////////////-->
+
+
+
+<ul>
+        <li>A<div id="ligne1">Taratata</div></li>
+        <li>E<div id="ligne2">Teretete</div></li>
+        <li>I<div id="ligne3">Tirititi</div></li>
+        <li>O<div id="ligne4">Torototo</div></li>
+    </ul>
+    <button onclick='affichageLignes(4)'>Afficher / Masquer les lignes</button>
+    <!-- [...] encore un peu de HTML [...] et on met la fonction -->
+    <script type="text/javascript">
+      function affichageLignes(nbrLignes) {
+        var i;
+        for (i = 1; i <= nbrLignes; i++) {
+          if (document.getElementById("ligne"+i).style.visibility == 'hidden') {
+            document.getElementById("ligne"+i).style.visibility = 'visible';
+          } else {
+            document.getElementById("ligne"+i).style.visibility = 'hidden';
+          }
+        }
+      }
+    </script>
+<!-- //////////////////////////////////////////////////////////////////////-->
+
+
+<button id="Bouton">Press me !</button>
+<div id="tonDiv">Hello !</div>
+   
+<script>
+document.querySelector("#Bouton").onclick = function() {
+if (window.getComputedStyle(document.querySelector('#tonDiv')).display=='none'){
+document.querySelector("#tonDiv").style.display="block";
+} else {
+document.querySelector("#tonDiv").style.display="none";
+}
+}
+</script>
+<!-- //////////////////////////////////////////////////////////////////////-->
+
+
+<span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le texte</span>
+    <div id="texte" class="texte">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl. Phasellus quis nulla sit amet leo pretium tincidunt. Quisque eleifend augue quis urna. Curabitur rhoncus quam ac odio. In a nisi et purus fermentum aliquet. Donec sed leo aliquet lacus sollicitudin rhoncus. Duis ultricies euismod odio. Suspendisse potenti. Cras interdum, diam quis porta interdum, elit urna tincidunt ipsum, quis pharetra sem dui ac tortor. Cras lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum. Aliquam volutpat turpis at ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+        
+        Nullam in est vel dui dignissim pretium. Vestibulum at augue. Quisque pellentesque leo id mauris. Sed elit felis, posuere in, pharetra at, auctor vitae, massa. Nam faucibus ipsum eget libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum. In hac habitasse platea dictumst. Nunc interdum massa nec mi. Donec luctus nunc ac odio. Nulla id metus vel augue placerat elementum. Duis et lectus ut libero porttitor dictum. Aliquam faucibus, magna pharetra bibendum suscipit, mi libero vehicula enim, ornare tristique odio est eget tellus. Maecenas arcu nisl, dictum sit amet, luctus sit amet, tincidunt tincidunt, mauris. Cras purus lacus, hendrerit et, rhoncus et, dictum vel, tellus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam arcu ante, sagittis a, posuere ultrices, adipiscing in, quam. Integer facilisis suscipit ante. Proin sit amet leo.<br /><br />
+        
+        Morbi dui. Nunc faucibus dui ut sapien. Phasellus ac ligula faucibus felis placerat congue. Integer est arcu, vestibulum a, fringilla vel, laoreet quis, enim. Pellentesque facilisis. Duis nunc magna, ullamcorper in, volutpat interdum, volutpat ac, erat. Ut lacinia, nibh a fermentum scelerisque, nulla erat interdum est, vel eleifend sapien mauris malesuada dui. Phasellus ultricies orci nec lorem. In non erat tempor nisl dictum hendrerit. Quisque volutpat, nulla imperdiet pharetra scelerisque, tellus diam ullamcorper felis, vitae pretium justo lectus vitae turpis. Nam nec nunc vel ipsum imperdiet semper. Aenean mollis ullamcorper ipsum. Donec sollicitudin, arcu quis fermentum varius, eros felis feugiat nibh, at lacinia magna risus in lorem. In odio mi, commodo eu, consequat ac, pretium eu, purus. Pellentesque ac erat quis sapien ultricies pharetra. 
+    </div>
+<script>
+function afficher_cacher(id)
+{
+    if(document.getElementById(id).style.visibility=="hidden")
+    {
+        document.getElementById(id).style.visibility="visible";
+        document.getElementById('bouton_'+id).innerHTML='Cacher le texte';
+    }
+    else
+    {
+        document.getElementById(id).style.visibility="hidden";
+        document.getElementById('bouton_'+id).innerHTML='Afficher le texte';
+    }
+    return true;
+}
+</script>
+<!-- //////////////////////////////////////////////////////////////////////-->
+
+
+<form action="#" method="post" name="formtest">
+	<label><input name="br" type="radio" value="1" />1 boule</label>
+	<label><input name="br" type="radio" value="2" />2 boules</label>
+	<label><input name="br" type="radio" value="3" />3 boules</label>
+    
+    <br />
+    <br />
+    <select name="sel1" size="7" id="sel1" style="visibility:hidden">
+    	<option>vanille</option>
+    	<option>chocolat</option>
+    	<option>menthe</option>
+    	<option>café</option>
+    	<option>praliné</option>
+    	<option>cassis</option>
+    	<option>fraise</option>
+    </select>
+    <select name="sel2" size="7" id="sel2" style="visibility:hidden">
+    	<option>vanille</option>
+    	<option>chocolat</option>
+    	<option>menthe</option>
+    	<option>café</option>
+    	<option>praliné</option>
+    	<option>cassis</option>
+    	<option>fraise</option>
+    </select>
+    <select name="sel3" size="7" id="sel3" style="visibility:hidden">
+    	<option>vanille</option>
+    	<option>chocolat</option>
+    	<option>menthe</option>
+    	<option>café</option>
+    	<option>praliné</option>
+    	<option>cassis</option>
+    	<option>fraise</option>
+    </select>
+</form>
+
+<script>
+	function selectaff(ind) {
+		var sel1 = document.getElementById("sel1");
+		var sel2 = document.getElementById("sel2");
+		var sel3 = document.getElementById("sel3");
+		sel1.style.visibility="hidden";
+		sel2.style.visibility="hidden";
+		sel3.style.visibility="hidden";
+		if(ind=="1") sel1.style.visibility="visible";
+		if(ind=="2") { sel1.style.visibility="visible"; sel2.style.visibility="visible"; }
+		if(ind=="3") { sel1.style.visibility="visible"; sel2.style.visibility="visible"; sel3.style.visibility="visible"; }
+		
+	}
+	//évènement chargement page (lorsque la page est chargée)
+	window.onload = function(){
+		//input radio
+		var radios = document.getElementsByName('br');
+		
+		for (var i = 0 ; i < radios.length ; i++) {
+			//lorsqu'on click sur le label (si c'est bien paramétré) ou sur l'input
+			radios[ i ].onclick = function(e){
+				//est ce que check ?
+				if (this.checked == true) {
+					//alors valeur du radio
+					selectaff(this.value);
+				}
+			}
+		}
+	}
+	
+</script>
+<!-- //////////////////////////////////////////////////////////////////////-->
+
+
+	</body>
+</html>	

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <head>
+	
+	 <link rel="stylesheet" media="screen" type="text/css" title="style" href="style.css"/>
+
+  </head>
+
+	<body>
+<p>ASCIICanvas<br/>
+   ===========</p>
+<p>
+  Setup:
+  Columns<label for="numColumns"></label> [<input type="number" step="1" min="2" id="numColumns" value="96"/>]
+  Lines<label for="numLines"></label> [<input type="number" step="1" min="2" id="numLines" value="32"/>]
+  <a href="#" id="createCanvas" onclick="createCanvas_onClick(event);">New</a> |
+  <a href="#" id="copyCanvas" onclick="copyCanvas_onClick(event);">Copy</a>
+</p>
+<p>
+    <label for="characterInput">Character:</label> [<input id="characterInput" class="input" type="text" maxlength="1" tabindex="-1" value=" " onkeydown="characterInput_onKeyDown(event)" onkeyup="characterInput_onKeyUp(event)" />] &lt;-- click here or just press a key to choose
+</p>
+<p>Tools:
+  <input type="radio" name="tool" onchange="tool_onChange(event)" id="drawTool" checked /> <label for="drawTool">Free draw</label>
+  <input type="radio" name="tool" onchange="tool_onChange(event)" id="lineTool" /> <label for="lineTool">Line</label>
+  ( <input type="radio" name="tool" onchange="tool_onChange(event)" id="rectTool" /> <label for="rectTool">Rectangle</label>
+  <input type="radio" name="tool" onchange="tool_onChange(event)" id="ellipseTool" /> <label for="ellipseTool">Ellipse</label>
+  <input type="checkbox" onchange="fill_onChange(event)" id="fill" /><label for="fill">fill</label> )
+  | <input id="enableUserSelectInput" type="checkbox" onchange="enableUserSelectInput_onChange(event)" /> <label for="enableUserSelectInput">Content is selectable</label>
+</p>
+<p>
+  Themes:
+  <input id="colorSet1" name="colorSet" type="radio" value="color-set-1" onchange="colorSet_onChange(event)" /> <label for="colorSet1" class="color-set-1">Color set 1</label>
+  <input id="colorSet2" name="colorSet" type="radio" value="color-set-2" onchange="colorSet_onChange(event)" /> <label for="colorSet2" class="color-set-2">Color set 2</label>
+  <input id="colorSet3" name="colorSet" type="radio" value="color-set-3" onchange="colorSet_onChange(event)" /> <label for="colorSet3" class="color-set-3">Color set 3</label>
+  <input id="colorSet4" name="colorSet" type="radio" value="color-set-4" onchange="colorSet_onChange(event)" /> <label for="colorSet4" class="color-set-4">Color set 4</label>
+  <input id="colorSet5" name="colorSet" type="radio" value="color-set-5" onchange="colorSet_onChange(event)" checked /> <label for="colorSet5" class="color-set-5">Color set 5</label>
+  <input id="colorSet6" name="colorSet" type="radio" value="color-set-6" onchange="colorSet_onChange(event)" /> <label for="colorSet6" class="color-set-6">Color set 6</label>
+</p>
+<div class="canvas-area">
+  <pre id="canvas"></pre>
+</div>
+<p>
+  Instructions:<br/>
+  =============<br/>
+  * Use `Setup` to clean up the canvas<br/>
+  * Press any key to choose your drawing character<br/>
+  * Mouse left click to draw<br/>
+  * Use `Copy` to copy your work to your clipboard (manual)<br/>
+  * Have phun! :-)
+</p>
+
+
+
+		<script src="script.js" type="text/javascript"></script>
+		
+	</body>
+</html>

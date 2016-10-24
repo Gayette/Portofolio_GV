@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	         <title>Gaël Venturin</title>
+
+    	<meta charset="utf-8"/>
+<!-- Framework(s) css -->      
+    	<link rel="stylesheet" type="text/css" href="BootStrap/bootstrap.css"> 
+  <!--    <link rel="stylesheet  type"="text/css" href="flexboxgrid-6.3.1/css/flexboxgrid.min.css"> -->
+<!-- css -->  
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Icons -->      
+      <link rel="stylesheet" href="Icon/font-awesome.min.css">
+<!-- Framework(s) Js -->  
+      <script src="lib/babylon.2.4.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+<!-- ///////////////// CANVAS PRINCIPAL ////////////////////////// -->   
+        <canvas id="gameCanvas"></canvas> <!-- va permettre d'afficher le contenu 3D dans le navigateur-->
+  <!--  <div class='line'></div>   --> 
+
+<!-- ///////////////// NAVBAR //////////////////////////////////// -->
+        <div class="navBlock col-md-3">
+              <div class="navigation">
+          <nav>
+              <ul>
+                  <li><a href="#">Accueil</a></li>
+                  <li><a href="#">Projets</a></li>
+                  <li><a href="#">Graphisme</a></li>
+                  <li><a href="#">C.V</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>                       
+          </nav>
+              </div>
+                        <hr>
+      <!-- ============= CANVAS CUBES ============= -->
+          <canvas id="blockScanvas"></canvas>
+                        <!-- Icons -->
+            <a href="#"><i class="fa-github-square"></i></a>
+            <a href="#"><i class="fa-linkedin-square"></i></a>
+                                  
+        </div> 
+
+<!-- ///////////////// BLOCK ID ///////////////////////////////// -->
+      		<div class="id col-md-3">
+	      			<h1>Gaël_Venturin</h1>
+	      			<h4>{ Front-end developer }</h4>
+      <!-- ============= CANVAS CUBE ============= -->
+        <canvas id="blockCanvas"></canvas> 
+	<!-- ============= BLOCK PRESENTATION ============= -->
+		      	<div class="presentation col-md-2">	
+		      		<p>
+		      			Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.
+		      		</p>
+		                    <hr>
+		      	</div>				
+      		</div>
+
+<!-- ///////////////// FOOTER ////////////////////////////////// -->
+    <div class="col-md-7">
+      <footer class="row">
+          <a href="#">Mentions légales</a>
+          <a href="#">Plan du site</a>
+      </footer>
+    </div>   
+<!-- =========================================================== -->
+    
+  </div>
+
+<!-- script grand canvas -->
+      	<script src="js/script.js"></script>
+<!-- script navBlock -->        
+        <script src="js/navScript.js"></script>
+<!-- script id/presentation -->        
+      	<script src="js/IDscript.js"></script>
+<!-- bootStrap -->        
+      	<script src="BootStrap/jquery.js"></script>
+  	  	<script src="BootStrap/bootstrap.js"></script> 
+</body>      
+</html>
